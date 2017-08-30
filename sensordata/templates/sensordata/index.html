@@ -1,0 +1,16 @@
+{% load sheets %}
+{% csv "1332Gt2lhYYQPToLtWkJSHnC5bpidEOiI2np7FK5Yyy8" as data %}
+<table style="width:100%" >
+
+    <thead style="width:100%" >
+        <tr>
+        TEMPERATURE :   
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            {{data.rows|last|last}}
+            *C
+        </tr>
+    </tbody>
+</table>
